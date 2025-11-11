@@ -23,7 +23,7 @@ where:
 
 We will then minimize the **binary cross-entropy loss** using gradient descent. You do not have to implement the binary cross-entropy loss yourself, but instead use `torch.nn.functional.binary_cross_entropy_with_logits`.
 
-Implement the whole training process (within which
+Implement the whole training process that
 - initializes `W` (with entries drawn from a standard Gaussian with zero mean and variance of 1) and `b` (with all zeros) with `requires_grad=True`
 - performs mini-batch gradient descent (the grader will run with batch size of 64, a learning rate of 0.1 and 800 epochs)
 - uses `torch.nn.functional.binary_cross_entropy_with_logits` as the loss
